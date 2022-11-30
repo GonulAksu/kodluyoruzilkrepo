@@ -1,4 +1,5 @@
 # Kodluyoruz Ilk Repo
+
 Bu repo [Kodluyoruz](https://app.patika.dev) Fron-End Eğitiminde oluşturduğumuz ilk repo.
 İçerisinde bir adet README dosyası bir adet de index.html barındırıyor.
 
