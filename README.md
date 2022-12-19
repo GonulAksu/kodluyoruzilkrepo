@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Kodluyoruz Ilk Repo
 
 Bu repo [Kodluyoruz](https://www.patika.dev/) Fron-End Eğitiminde oluşturduğumuz ilk repo.
@@ -26,4 +24,3 @@ pull requestler kabul edilir.Büyük değişiklikler için, lütfen önce neyi d
 
 
 
->>>>>>> 2318cd9ba66c4b7c400b6071b409edaebde86dc1
