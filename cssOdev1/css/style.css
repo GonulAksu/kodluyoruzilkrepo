@@ -1,0 +1,20 @@
+h1 {
+    color:#810CA8;
+}
+h3 {
+    color:#EB455F;
+}
+h4 {
+    color:#FF6E31;
+}
+.container {
+    padding-top: 8px;
+    text-align: center;
+}
+.list-item{
+    display: inline-block;
+    padding: 3px;
+}
+#urunler li {
+    list-style-position: inside;
+}
