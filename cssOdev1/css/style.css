@@ -7,14 +7,33 @@ h3 {
 h4 {
     color:#FF6E31;
 }
-.container {
+.baslik {
+    text-transform: capitalize;
+}
+.container{
     padding-top: 8px;
     text-align: center;
 }
+
 .list-item{
     display: inline-block;
     padding: 3px;
 }
 #urunler li {
-    list-style-position: inside;
+    list-style-position:inside;
+
+}
+ol li {
+    list-style-position:outside;
+}
+img {
+    width: 220px;
+}
+.urunler {
+  position: relative;
+}
+.urnlr_a {
+    position:absolute;
+    left:55%;
+    transform: translate(-55%);
 }
