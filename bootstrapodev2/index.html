@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>İnstagramClone |Odev2</title>
+    <style>
+        body {
+            background-color:rgb(255,255,255);
+        }        .logo {
+            margin-left: 192px;
+        }
+
+        ::placeholder {
+            background-image: url("img/search-solid.svg");
+            text-align: center;
+            font-size: 14px;
+            background-position: 30%;
+            background-size: 6%;
+            background-repeat: no-repeat;
+
+        }
+
+        .storyphoto {
+            width: 60px;
+            height: 60px;
+        }
+
+
+        .storytext {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            font-size: 12px;
+        }
+
+        .middleArea {
+            max-height: 200px !important;
+            margin-top:90px;
+        }
+
+        .posttext {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .posttext:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .postuserfont {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+
+        .card-header,
+        .card-footer {
+            background-color: white;
+        }
+        .username {
+            text-decoration: none;
+           }
+           .rightpanel {
+             background-color: #fff;
+             border: none;
+           }
+           #sticky-sidebar {
+            position:fixed;
+           }
+           .stickynvbr {
+            background-color:rgb(255,255,255);            position:fixed;
+            width: 100%;
+            top:0;
+            z-index:2;
+           }
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-sm navbar-light border stickynvbr" style="height: 54px;">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="#" class="navbar-brand">
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" />
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse d-flex  justify-content-center" id="collapseContent">
+                <form class="form-inline my-2 my-lg-0 ms-5 d-none d-sm-block">
+                    <input type="text" class="form-control text-center" type="search"
+                        style="width: 216px; height: 28px;" placeholder="Search " aria-label="Search">
+                </form>
+            </div>
+            <div class="collapse navbar-collapse" id="collapseContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <i class="fa-solid fa-house fa-lg me-2 mt-1" style="color:black"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                            <i class="fab fa-facebook-messenger fa-lg me-2 mt-1" style="color:black;"></i>
+                        </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                            <i class="far fa-compass fa-lg me-2 mt-1" style="color: black;"></i>
+                        </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                            <i class="far fa-heart fa-lg me-2 mt-1" style="color:black"></i>
+                        </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" target="_blank">
+                            <img src="img/profilepic.jpg" alt="profilfoto" class="rounded-circle mb-2"
+                                style="width: 23px;height: 23px;">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <main class="container middleArea">
+        <div class="row">
+            <div class="col-12 col-sm-6 offset-sm-1 mt-2">
+                <!-- first card -->
+                <div class="card">
+                    <div class="card_body d-flex flex-row  justify-content-around p-2">
+                        <a href="#" target="_blank" style="text-decoration: none;">
+                            <img src="img/profilepic.jpg" alt="storyphoto"
+                                class="rounded-circle border border-danger img-fluid me-3 d-block mx-auto storyphoto">
+                            <span class="storytext">Kodluyoruz</span>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration: none;">
+                            <img src="img/profilepic.jpg" alt="storyphoto"
+                                class="rounded-circle border border-danger img-fluid me-3 d-block  mx-auto storyphoto">
+                            <span class="storytext">Kodluyoruz</span>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration: none;">
+                            <img src="img/profilepic.jpg" alt="storyphoto"
+                                class="rounded-circle border border-danger img-fluid me-3 d-block mx-auto storyphoto">
+                            <span class="storytext">Kodluyoruz</span>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration: none;">
+                            <img src="img/profilepic.jpg" alt="storyphoto"
+                                class="rounded-circle border border-danger img-fluid me-3 d-block mx-auto storyphoto">
+                            <span class="storytext">Kodluyoruz</span>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration: none;">
+                            <img src="img/profilepic.jpg" alt="storyphoto"
+                                class="rounded-circle border border-danger img-fluid me-3 d-block mx-auto storyphoto">
+                            <span class="storytext">Kodluyoruz</span>
+                        </a>
+                        <a href="#" target="_blank" style="text-decoration: none;">
+                            <img src="img/profilepic.jpg" alt="storyphoto"
+                                class="rounded-circle border border-danger img-fluid me-3 d-block mx-auto storyphoto">
+                            <span class="storytext">Kodluyoruz</span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- second card-post -->
+                <div class="card  mb-3">
+                    <div class="card-header">
+                        <img src="img/profilepic.jpg" alt="postphoto" class="img-fluid rounded-circle me-2"
+                            style="width:35px;height: 35px;">
+                        <span class=" fw-bold">
+                            <a href="#" target="_blank" class="posttext">Loremipsum</a></span>
+                        <span class="fw-bold mt-2">
+                            <i class="fas fa-ellipsis-h" style="font-size:22px;"></i>
+                        </span>
+
+                    </div>
+                    <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg" alt=""
+                        class="card-img-top">
+                    <ul class="list-group list-group-horizontal list-group-flush mt-1" style="list-style-type: none;">
+                        <li class="list-group-item">
+                            <a href="#" class="nav-item">
+                                <i class="far fa-heart fa-lg" style="color:black; font-size: 23px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="nav-item">
+                                <i class="far fa-comment fa-lg" style="color:black; font-size: 23px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="nav-item">
+                                <i class="far fa-paper-plane fa-lg" style="color:black; font-size: 23px;"></i>
+                            </a>
+                        </li>
+                        <span class=" offset-sm-7">
+                            <li class="list-group-item border-0">
+                                <a href="#" class="nav-item">
+                                    <i class="far fa-bookmark fa-lg" style="color:black; font-size: 23px;"></i>
+                                </a>
+                            </li>
+
+                        </span>
+
+                    </ul>
+                    <span>
+                        <img src="img/profilepic.jpg" alt="commentphoto" class="rounded-circle mb-1 ms-3"
+                            style="width:23px; height:23px">
+                        <span><strong>Loremipsum.</strong>ve <strong>34 diğer kişi</strong>begendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px;">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Burası Rize!
+                            Harika bir cennet!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                            margin-left: -4px;
+                            margin-top: -14px;
+                            color: rgb(139, 133, 133);
+                          ">
+                                15 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok
+                            güzelmiş yaa! Bir gün götürürsün artık bizi de:)
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful
+                            view bro! I always want to travel Rize...
+                        </p>
+                        <p class="card-text" style="
+                          margin-top: -10px;
+                          margin-left: -4px;
+                          font-size: 12px;
+                          color: rgb(139, 133, 133);
+                        ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex  justify-content-between" style="
+                    color: rgb(139, 133, 133);
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                      'Helvetica Neue', sans-serif;
+                    font-size: 14px;
+                  ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span>
+
+                        <span style="color: #0095f6; opacity: 50%"><a href="#"
+                                style="text-decoration: none;"><strong>Paylaş</strong></a></span>
+                    </div>
+
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <img src="img/profilepic.jpg" alt="postphoto" class="img-fluid rounded-circle me-2"
+                            style="width:35px;height: 35px;">
+                        <span class=" fw-bold">
+                            <a href="#" target="_blank" class="posttext">Loremipsum</a></span>
+                        <span class="fw-bold mt-2">
+                            <i class="fas fa-ellipsis-h" style="font-size:22px;"></i>
+                        </span>
+
+                    </div>
+                    <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg" alt=""
+                        class="card-img-top">
+                    <ul class="list-group list-group-horizontal list-group-flush mt-1" style="list-style-type: none;">
+                        <li class="list-group-item">
+                            <a href="#" class="nav-item">
+                                <i class="far fa-heart fa-lg" style="color:black; font-size: 23px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="nav-item">
+                                <i class="far fa-comment fa-lg" style="color:black; font-size: 23px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="nav-item">
+                                <i class="far fa-paper-plane fa-lg" style="color:black; font-size: 23px;"></i>
+                            </a>
+                        </li>
+                        <span class=" offset-sm-7">
+                            <li class="list-group-item border-0">
+                                <a href="#" class="nav-item">
+                                    <i class="far fa-bookmark fa-lg" style="color:black; font-size: 23px;"></i>
+                                </a>
+                            </li>
+
+                        </span>
+
+                    </ul>
+                    <span>
+                        <img src="img/profilepic.jpg" alt="commentphoto" class="rounded-circle mb-1 ms-3"
+                            style="width:23px; height:23px">
+                        <span><strong>Loremipsum.</strong>ve <strong>34 diğer kişi</strong>begendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px;">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Burası Rize!
+                            Harika bir cennet!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                            margin-left: -4px;
+                            margin-top: -14px;
+                            color: rgb(139, 133, 133);
+                          ">
+                                15 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok
+                            güzelmiş yaa! Bir gün götürürsün artık bizi de:)
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful
+                            view bro! I always want to travel Rize...
+                        </p>
+                        <p class="card-text" style="
+                          margin-top: -10px;
+                          margin-left: -4px;
+                          font-size: 12px;
+                          color: rgb(139, 133, 133);
+                        ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex  justify-content-between" style="
+                    color: rgb(139, 133, 133);
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                      'Helvetica Neue', sans-serif;
+                    font-size: 14px;
+                  ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span>
+
+                        <span style="color: #0095f6; opacity: 50%"><a href="#"
+                                style="text-decoration: none;"><strong>Paylaş</strong></a></span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- sidebar start -->
+            <div class="col-4 ms-5 mt-4">
+                <div class="card d-block d-sm-none d-md-block  rightpanel" id="sticky-sidebar">
+                    <div class="card_body d-flex flex-column">
+                        <a href="#" class="nav-link">
+                            <span>
+                                <img src="img/profilepic.jpg" alt="sidebar"
+                                    class="rounded-circle storyphoto border border-danger img-fluid me-3">
+
+
+                                <span class="postuserfont "><strong>Lorem, ipsum dolor.</strong></span>
+                            </span>
+                        </a>
+                        <div class="mt-2 nav-link ms-2">
+                            <span class="mt-5 postuserfont" style="color:rgb(139, 133, 133)">
+                                Senin için öneriler
+                            </span>
+                            <span class="postuserfont align-self-end fw-bold ms-5" style="font-size:12px;">Tümünü Gör</span>
+                        </div>
+                        <div class=" ms-3 nav-link">
+                            <span>
+                                <img src="img/profilepic.jpg" alt="sidebar"
+                                    class="rounded rounded-circle img-fluid postphoto">
+
+                            </span>
+                            <a href="#" class="username">
+                                <span class="postuserfont mt-1 ms-2 fw-bold">kablosuzbeyin</span>
+                                <span class="postuserfont ms-4"
+                                    style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                        Et</strong></span>
+                            </a>
+
+                        </div>
+                        <div class=" ms-3 nav-link">
+                            <span>
+                                <img src="img/profilepic.jpg" alt="sidebar"
+                                    class="rounded rounded-circle img-fluid postphoto">
+
+                            </span>
+                            <a href="#" class="username">
+                                <span class="postuserfont mt-1 ms-2 fw-bold">kablosuzbeyin</span>
+                                <span class="postuserfont ms-4"
+                                    style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                        Et</strong></span>
+                            </a>
+
+                        </div>
+                        <div class=" ms-3 nav-link">
+                            <span>
+                                <img src="img/profilepic.jpg" alt="sidebar"
+                                    class="rounded rounded-circle img-fluid postphoto">
+
+                            </span>
+                            <a href="#" class="username">
+                                <span class="postuserfont mt-1 ms-2 fw-bold">kablosuzbeyin</span>
+                                <span class="postuserfont ms-4"
+                                    style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                        Et</strong></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
