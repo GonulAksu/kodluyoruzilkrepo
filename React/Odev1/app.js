@@ -6,7 +6,8 @@ export default async(userid)=>{
 
         const {data:posts}=await axios(`https://jsonplaceholder.typicode.com/posts?userId=${userid}`);
 
-      console.log({"User":user,"Posts":posts})
+      // console.log({"User":user,"Posts":posts})
+      return {...user, posts:posts };
 }
 
 //2.yöntem
@@ -34,3 +35,4 @@ export default async(userid)=>{
 //         console.log(e);
 //     }
 // }
+

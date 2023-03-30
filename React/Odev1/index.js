@@ -1,4 +1,9 @@
 import getData from './app.js';
-getData(1);
+
+(async () => {
+    const result = await getData(1); 
+    console.log(result);
+  })();
+// getData(1);
 // getData();
 
