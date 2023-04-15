@@ -23,8 +23,6 @@ const Form = () => {
                 <button className='btn btn-secondary' type='submit'>search</button>
                 <br />
 
-
-
                 <h6 className='text-uppercase mt-3'>{values.cityName}</h6>
 
             </form>
