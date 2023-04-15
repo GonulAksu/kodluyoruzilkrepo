@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  background-image:linear-gradient(to bottom,rgba(129, 81, 211, 0.2),rgb(255, 204, 204,0.2));
+  height: 100vh;
+  box-sizing: border-box;
+  /* background:no-repeat center right/cover ; */
+}
+
+.card:first-child {
+  background-color:#c2d6d6;
+}
