@@ -1,0 +1,69 @@
+/* add css module styles here (optional) */
+body {
+  box-sizing: border-box;
+  margin-top:100px;
+  text-align: center;
+  font-size: 2em;
+  background-image:linear-gradient(to bottom,rgba(140, 0, 179, 0.2),rgb(255, 204, 204,0.2));
+  height:100vh;
+}
+.test {
+  margin-bottom:2px;
+  padding:2px;
+}
+button.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border-radius:5px;
+  padding: 11px;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+   transition: background-color 100ms linear;
+  min-width: 125px;
+}
+button.primary {
+  border: 0px;
+  background: #3498db;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+button.primary:hover {
+  opacity: 0.7;
+}
+button.default {
+  border: 1px solid rgb(157, 157, 163);
+  background-color: #ffffff;
+}
+button.default:hover {
+  border:1px solid #3498db;
+  color: #3498db;
+}
+button.dashed {
+  border: 1px  dashed rgb(157, 157, 163) ;
+  background-color: #ffffff;
+}
+button.dashed:hover {
+  border:1px #3498db dashed;
+  color: #3498db;
+}
+
+button.text {
+  background-color: #ffffff;
+  border: none;
+}
+button.text:hover {
+  background-color:rgba(157, 157, 163,0.7) ;
+}
+
+button.link{
+  background-color:#ffffff;
+  border: none;
+  color:#3498db;
+  -webkit-transition:color 100ms linear;
+  -ms-transition:color 100ms linear;
+   transition:color 100ms linear;
+}
+button.link:hover {
+  color:#9cc5e1 ;
+}
