@@ -1,0 +1,40 @@
+.header {
+  height: 40vh;
+  background-image:linear-gradient(to bottom,rgba(17, 6, 41, 0.2),rgb(255, 204, 204,0.6)),url('./img/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg');
+  background-position:top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.header h1 {
+  position: absolute;
+  color:rgb(244, 218, 170);
+  font-size:1.8rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+
+}
+.srchinput {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.loa {
+  position: absolute;
+  top:100%;
+  left:50%;
+  margin-top:20px;
+  transform: translate(-50%);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
